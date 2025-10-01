@@ -1,16 +1,51 @@
-## Hi there 👋
+# 👋 Hey there! I'm Surena
 
-<!--
-**surenaprojects/surenaprojects** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+### 🚀 Developer | 💻 Linux Enthusiast | 🎮 Gamer | 🏋️‍♂️ Bodybuilder
 
-Here are some ideas to get you started:
+---
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## 🔥 About Me
+- 🌱 Currently learning **Dart**, **Python**, and **JavaScript**
+- 💡 Passionate about designing **professional logos** and creative UIs
+- ⚡ Enthusiast of **cryptocurrencies** and future technologies
+- 📚 Book lover & lifelong learner
+- 🖥 Favorite OS: **Linux** ❤️
+
+---
+
+## 🛠 Skills & Tools
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=python,dart,js,html,css,linux,git,github,vscode,figma" />
+</p>
+
+---
+
+## 📊 GitHub Stats
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=Surena&show_icons=true&theme=radical" alt="github stats" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Surena&theme=radical" alt="streak stats" />
+</p>
+
+---
+
+## 🎨 Portfolio Highlights
+- 🖌 Custom logo designs
+- 💻 Projects in **Python**, **Dart**, and **JavaScript**
+- 🎮 Tools & scripts related to gaming
+
+---
+
+## 📫 Connect With Me
+<p align="center">
+  <a href="https://github.com/Surena"><img src="https://img.shields.io/badge/GitHub-000?style=for-the-badge&logo=github&logoColor=white" /></a>
+  <a href="https://t.me/YOUR_TELEGRAM"><img src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white" /></a>
+  <a href="mailto:YOUR_EMAIL"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
+</p>
+
+---
+✨ Always learning, always building! ✨
