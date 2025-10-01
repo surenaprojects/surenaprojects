@@ -1,4 +1,4 @@
-# 👋 Hey there! I'm Surena
+# 👋 Hey there! I'm Hossein Rahimi
 
 ### 🚀 Developer | 💻 Linux Enthusiast | 🎮 Gamer | 🏋️‍♂️ Bodybuilder
 
@@ -24,11 +24,11 @@
 ## 📊 GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Surena&show_icons=true&theme=radical" alt="github stats" />
+  <img src="https://github-readme-stats.vercel.app/api?username=Hossein&show_icons=true&theme=radical" alt="github stats" />
 </p>
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com?user=Surena&theme=radical" alt="streak stats" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Hossein&theme=radical" alt="streak stats" />
 </p>
 
 ---
@@ -42,10 +42,11 @@
 
 ## 📫 Connect With Me
 <p align="center">
-  <a href="https://github.com/surenaprojects"><img src="https://img.shields.io/badge/GitHub-000?style=for-the-badge&logo=github&logoColor=white" /></a>
-  <a href="https://t.me/surenaprojects"><img src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white" /></a>
-  <a href="mailto:surenaprojects@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
+  <a href="https://github.com/hosseinrahiminik"><img src="https://img.shields.io/badge/GitHub-000?style=for-the-badge&logo=github&logoColor=white" /></a>
+  <a href="https://t.me/hosseinrahiminik"><img src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white" /></a>
+  <a href="mailto:hosseinrahiminik@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
 </p>
 
 ---
 ✨ Always learning, always building! ✨
+
