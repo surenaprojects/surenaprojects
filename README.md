@@ -24,7 +24,7 @@
 ## 📊 GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Surena&show_icons=true&theme=radical" alt="github stats" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Surena&theme=radical" alt="streak stats" />
 </p>
 
 <p align="center">
