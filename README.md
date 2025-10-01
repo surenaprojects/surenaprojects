@@ -1,4 +1,4 @@
-# 👋 Hey there! I'm Hossein Rahimi
+# 👋 Hey there! I'm Hossein Rahimi the founder of Surena Project.
 
 ### 🚀 Developer | 💻 Linux Enthusiast | 🎮 Gamer | 🏋️‍♂️ Bodybuilder
 
@@ -42,9 +42,9 @@
 
 ## 📫 Connect With Me
 <p align="center">
-  <a href="https://github.com/hosseinrahiminik"><img src="https://img.shields.io/badge/GitHub-000?style=for-the-badge&logo=github&logoColor=white" /></a>
-  <a href="https://t.me/hosseinrahiminik"><img src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white" /></a>
-  <a href="mailto:hosseinrahiminik@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
+  <a href="https://github.com/surenaprojects"><img src="https://img.shields.io/badge/GitHub-000?style=for-the-badge&logo=github&logoColor=white" /></a>
+  <a href="https://t.me/surenaprojects"><img src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white" /></a>
+  <a href="mailto:surenaprojects@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
 </p>
 
 ---
