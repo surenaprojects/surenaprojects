@@ -1,15 +1,63 @@
-/* Import fonts for a clean, modern look */
+/* Import the Inter font for a clean, modern look */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap');
 
 /* Base Styles */
 body {
-    /* Use Inter for English and Vazirmatn as a fallback for Persian */
-    font-family: 'Inter', 'Vazirmatn', sans-serif;
+    /* Set Inter as the primary font for the site */
+    font-family: 'Inter', sans-serif;
     scroll-behavior: smooth;
-    background-color: #0d1117; /* Dark background for high contrast */
+    background-color: #0d1117; /* Dark background fallback */
     color: #c9d1d9; /* Light text color for readability */
+    position: relative; /* Needed for the pseudo-element positioning */
+    z-index: 0;
 }
+
+/* -- DYNAMIC BACKGROUND EFFECT --
+  This pseudo-element creates a full-screen, animated gradient layer
+  that sits behind all the page content.
+*/
+body::before {
+    content: '';
+    position: fixed; /* Cover the entire viewport, stays in place on scroll */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1; /* Place it behind the body's content */
+    
+    /* A large, soft, multi-colored gradient for the rainbow effect */
+    background: linear-gradient(
+        125deg, 
+        #ff0000, 
+        #ff7f00, 
+        #ffff00, 
+        #00ff00, 
+        #0000ff, 
+        #4b0082, 
+        #8f00ff
+    );
+    
+    /* Set the background size to be much larger than the viewport to allow for smooth animation */
+    background-size: 400% 400%;
+    
+    /* Apply the animation defined below */
+    animation: rainbow-background-animation 25s ease infinite;
+    
+    /* Add a strong blur effect to make the background soft and gentle */
+    filter: blur(90px); 
+    opacity: 0.5; /* Reduce opacity for a more subtle effect */
+}
+
+/* -- KEYFRAME ANIMATION FOR THE BACKGROUND --
+  This animation smoothly moves the background position of the gradient,
+  creating a slow, shifting color effect.
+*/
+@keyframes rainbow-background-animation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
 
 /* Custom styles for the smooth scroll-reveal animation */
 .scroll-reveal {
