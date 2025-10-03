@@ -140,3 +140,12 @@ body::before {
     font-size: clamp(1rem, 4vw, 2rem); /* responsive text size */
     vertical-align: bottom;
 }
+
+/* --- Fix Long Skill Titles (like "Cryptocurrency") --- */
+#skills h3 {
+    white-space: normal;       /* allow text to wrap */
+    overflow-wrap: break-word; /* break long words if needed */
+    word-break: break-word;    /* extra safety for older browsers */
+    line-height: 1.3;          /* better readability */
+    font-size: clamp(0.9rem, 3.5vw, 1.1rem); /* responsive font size */
+}
