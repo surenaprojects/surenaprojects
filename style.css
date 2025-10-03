@@ -35,11 +35,7 @@ body::before {
        url("FiraCodeNerdFont-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
-}
-.nf-icon {
-  font-family: "FiraCode Nerd Font"; /* Use Nerd Font */
-  font-size: 3rem; /* Adjust size */
-}
+}   
 
 @keyframes rainbow-background-animation {
     0% { background-position: 0% 50%; }
