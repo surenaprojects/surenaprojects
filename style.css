@@ -157,3 +157,37 @@ body::before {
     line-height: 1.3;          /* better readability */
     font-size: clamp(0.9rem, 3.5vw, 1.1rem); /* responsive font size */
 }
+/* --- Linux Card Styles --- */
+.linux-card {
+    background-color: rgba(31, 41, 55, 0.8); /* equivalent to bg-gray-800/80 */
+    padding: 1.5rem; /* p-6 */
+    border-radius: 1rem; /* rounded-xl */
+    box-shadow: 0 10px 15px rgba(0,0,0,0.3); /* shadow-xl */
+    text-align: center;
+    border-bottom: 4px solid #22c55e; /* border-green-500 */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* transition duration-300 & transform */
+    transition-delay: 0ms; /* previously inline */
+}
+
+.linux-card:hover {
+    background-color: rgba(55, 65, 81, 0.8); /* hover:bg-gray-700/80 */
+    transform: translateY(-0.25rem); /* hover:-translate-y-1 */
+}
+
+.linux-card .icon {
+    font-size: 3rem; /* text-5xl */
+    margin-bottom: 0.75rem; /* mb-3 */
+    display: block;
+}
+
+.linux-card h3 {
+    font-size: 1.25rem; /* text-xl */
+    font-weight: 600; /* font-semibold */
+    color: white;
+    margin-bottom: 0.25rem; /* mb-1 */
+}
+
+.linux-card p {
+    font-size: 0.875rem; /* text-sm */
+    color: #9ca3af; /* text-gray-400 */
+}
