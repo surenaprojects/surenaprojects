@@ -1,68 +1,44 @@
-/* Import the Inter font for a clean, modern look */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-
-/* Base Styles */
+/* --- Base Styles --- */
 body {
-    /* Set Inter as the primary font for the site */
     font-family: 'Inter', sans-serif;
-    scroll-behavior: smooth;
     background-color: #0d1117; /* Dark background fallback */
-    color: #c9d1d9; /* Light text color for readability */
-    position: relative; /* Needed for the pseudo-element positioning */
+    color: #c9d1d9;
+    position: relative;
     z-index: 0;
+    margin: 0;
 }
 
-/* -- DYNAMIC BACKGROUND EFFECT --
-  This pseudo-element creates a full-screen, animated gradient layer
-  that sits behind all the page content.
-*/
+/* -- DYNAMIC BACKGROUND EFFECT -- */
 body::before {
     content: '';
-    position: fixed; /* Cover the entire viewport, stays in place on scroll */
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: -1; /* Place it behind the body's content */
-    
-    /* A large, soft, multi-colored gradient for the rainbow effect */
+    z-index: -1;
     background: linear-gradient(
         125deg, 
-        #ff0000, 
-        #ff7f00, 
-        #ffff00, 
-        #00ff00, 
-        #0000ff, 
-        #4b0082, 
+        #ff0000, #ff7f00, #ffff00, 
+        #00ff00, #0000ff, #4b0082, 
         #8f00ff
     );
-    
-    /* Set the background size to be much larger than the viewport to allow for smooth animation */
     background-size: 400% 400%;
-    
-    /* Apply the animation defined below */
     animation: rainbow-background-animation 25s ease infinite;
-    
-    /* Add a strong blur effect to make the background soft and gentle */
-    filter: blur(90px); 
-    opacity: 0.5; /* Reduce opacity for a more subtle effect */
+    filter: blur(100px);
+    opacity: 0.4;
 }
 
-/* -- KEYFRAME ANIMATION FOR THE BACKGROUND --
-  This animation smoothly moves the background position of the gradient,
-  creating a slow, shifting color effect.
-*/
 @keyframes rainbow-background-animation {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
 }
 
-
-/* Custom styles for the smooth scroll-reveal animation */
+/* --- Scroll Reveal Animation --- */
 .scroll-reveal {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(25px);
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 .scroll-reveal.visible {
@@ -70,25 +46,97 @@ body::before {
     transform: translateY(0);
 }
 
-/* Style for the elegant gradient divider between sections */
+/* --- Gradient Divider --- */
 .divider {
     height: 1px;
     background: linear-gradient(to right, transparent 0%, #38bdf8 50%, transparent 100%);
     margin: 4rem 0;
     border: 0;
+    opacity: 0.5;
 }
 
-/* Animation for the hero title effect */
+/* --- Hero Title Styles --- */
+.hero-title-effect {
+    animation: pulse-shadow 3s infinite alternate; /* glowing effect */
+    white-space: nowrap;       /* keep text on one line */
+    overflow: hidden;          /* prevent overflowing */
+    text-overflow: ellipsis;   /* show "..." if text too long */
+    font-size: clamp(1.5rem, 5vw, 3.5rem); /* responsive font size */
+    text-align: center;
+    font-weight: 700;
+}
+
+/* --- Pulse Shadow Animation --- */
 @keyframes pulse-shadow {
     0% { text-shadow: 0 0 5px rgba(59, 130, 246, 0.5); }
     50% { text-shadow: 0 0 25px rgba(59, 130, 246, 0.8), 0 0 45px rgba(96, 165, 250, 0.6); }
     100% { text-shadow: 0 0 5px rgba(59, 130, 246, 0.5); }
 }
-.hero-title-effect {
-    animation: pulse-shadow 3s infinite alternate;
+
+/* --- Typing Cursor --- */
+.typing-cursor {
+    display: inline-block;
+    width: 2px;
+    height: 1.25em;
+    background-color: #38bdf8;
+    margin-left: 4px;
+    animation: blink 0.7s infinite;
+    vertical-align: bottom;
 }
 
-/* Mobile menu visibility control */
-#mobile-menu:not(.show) {
-    display: none;
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+/* --- Mobile Menu --- */
+#mobile-menu {
+    transition: max-height 0.3s ease-in-out;
+    max-height: 0;
+    overflow: hidden;
+}
+#mobile-menu.show {
+    max-height: 300px;
+}
+
+/* --- Back to Top Button --- */
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #1f2937;
+    color: #60a5fa;
+    border: 2px solid #60a5fa;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: opacity 0.3s, visibility 0.3s, transform 0.3s, background-color 0.3s;
+    z-index: 1000;
+}
+#back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+#back-to-top:hover {
+    background-color: #60a5fa;
+    color: #1f2937;
+}
+
+/* --- Typing Text Container --- */
+#typed-text {
+    white-space: nowrap;      /* keep typed text on a single line */
+    overflow: hidden;
+    display: inline-block;
+    font-weight: 600;
+    color: #22c55e;           /* green highlight */
+    font-size: clamp(1rem, 4vw, 2rem); /* responsive text size */
+    vertical-align: bottom;
 }
